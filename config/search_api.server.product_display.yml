@@ -1,0 +1,17 @@
+uuid: 64547a0c-92ad-4b76-9ea6-4010feb61971
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: product_display
+name: 'Product Display'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  partial_matches: false
+  autocomplete:
+    suggest_suffix: true
+    suggest_words: true

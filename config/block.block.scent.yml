@@ -1,0 +1,22 @@
+uuid: 670efb16-29e0-4fb4-a3bd-6344fc67387e
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.scent
+  module:
+    - facets
+  theme:
+    - bartik
+id: scent
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:scent'
+settings:
+  id: 'facet_block:scent'
+  label: Scent
+  provider: facets
+  label_display: visible
+visibility: {  }

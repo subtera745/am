@@ -1,0 +1,124 @@
+uuid: f96c951f-f886-487e-9f21-a29f70791a1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a
+    - field.storage.node.field_candle_image
+    - field.storage.node.field_color
+    - field.storage.node.field_wax
+    - field.storage.node.field_type
+    - field.storage.node.field_scent
+    - field.storage.node.field_description
+    - search_api.server.product_display
+  module:
+    - search_api
+    - node
+    - taxonomy
+id: candle_dex
+name: 'Candle Dex'
+description: ''
+read_only: false
+field_settings:
+  field_a:
+    label: 'Amazon Affiliate'
+    datasource_id: 'entity:node'
+    property_path: field_a
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_a
+  field_candle_image:
+    label: 'Candle Image'
+    datasource_id: 'entity:node'
+    property_path: field_candle_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_candle_image
+  field_color:
+    label: Color
+    datasource_id: 'entity:node'
+    property_path: field_color
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_color
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+  field_wax:
+    label: Wax
+    datasource_id: 'entity:node'
+    property_path: field_wax
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_wax
+  field_type:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: field_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_type
+  field_scent:
+    label: Scent
+    datasource_id: 'entity:node'
+    property_path: field_scent
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_scent
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+  field_description:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: field_description
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_description
+  name:
+    label: Name
+    datasource_id: 'entity:taxonomy_term'
+    property_path: name
+    type: string
+  tid:
+    label: 'Term ID'
+    datasource_id: 'entity:taxonomy_term'
+    property_path: tid
+    type: integer
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:taxonomy_term':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  rendered_item: {  }
+  add_url: {  }
+  aggregated_field: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: product_display

@@ -1,0 +1,29 @@
+uuid: 9a1e4bdc-e36d-490a-8660-0c1cd9eddf5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scent
+    - node.type.candle
+    - taxonomy.vocabulary.scent
+id: node.candle.field_scent
+field_name: field_scent
+entity_type: node
+bundle: candle
+label: Scent
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      scent: scent
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: e763522e-bcae-4606-a524-0751eab9233f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_a
+    - node.type.candle
+  module:
+    - link
+id: node.candle.field_a
+field_name: field_a
+entity_type: node
+bundle: candle
+label: 'Amazon Affiliate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

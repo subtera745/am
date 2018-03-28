@@ -1,0 +1,38 @@
+uuid: 73c845f1-af4a-420a-b7b9-3748ea739f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.candle.field_a
+    - field.field.node.candle.field_candle_image
+    - field.field.node.candle.field_color
+    - field.field.node.candle.field_description
+    - field.field.node.candle.field_scent
+    - field.field.node.candle.field_type
+    - field.field.node.candle.field_wax
+    - node.type.candle
+  module:
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.candle.teaser
+targetEntityType: node
+bundle: candle
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_a: true
+  field_candle_image: true
+  field_color: true
+  field_description: true
+  field_scent: true
+  field_type: true
+  field_wax: true

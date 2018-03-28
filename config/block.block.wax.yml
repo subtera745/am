@@ -1,0 +1,22 @@
+uuid: 7da93a3c-358c-454a-8ffd-4f0d871388f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.wax
+  module:
+    - facets
+  theme:
+    - bartik
+id: wax
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:wax'
+settings:
+  id: 'facet_block:wax'
+  label: Wax
+  provider: facets
+  label_display: visible
+visibility: {  }

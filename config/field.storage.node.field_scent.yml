@@ -1,0 +1,20 @@
+uuid: 8a1c4821-cf89-43e2-a5d4-65fd2bc8acdf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_scent
+field_name: field_scent
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

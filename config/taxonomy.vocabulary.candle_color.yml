@@ -1,0 +1,9 @@
+uuid: 25b0d6e1-11e3-4517-8649-010256dd2aa4
+langcode: en
+status: true
+dependencies: {  }
+name: 'Candle Color'
+vid: candle_color
+description: 'Color of the Candle'
+hierarchy: 0
+weight: 0

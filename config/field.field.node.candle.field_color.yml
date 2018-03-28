@@ -1,0 +1,29 @@
+uuid: ede1ca21-5518-49b1-94ad-b331a21af63f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color
+    - node.type.candle
+    - taxonomy.vocabulary.candle_color
+id: node.candle.field_color
+field_name: field_color
+entity_type: node
+bundle: candle
+label: Color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      candle_color: candle_color
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

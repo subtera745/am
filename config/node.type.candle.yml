@@ -1,0 +1,17 @@
+uuid: 73dd0900-899c-48e1-aa73-6afc581d37d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Candle
+type: candle
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

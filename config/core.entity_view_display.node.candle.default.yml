@@ -1,0 +1,98 @@
+uuid: 5969cddc-fbe1-4484-b78d-3b7b0b3093ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.candle.field_a
+    - field.field.node.candle.field_candle_image
+    - field.field.node.candle.field_color
+    - field.field.node.candle.field_description
+    - field.field.node.candle.field_scent
+    - field.field.node.candle.field_type
+    - field.field.node.candle.field_wax
+    - image.style.medium
+    - node.type.candle
+  module:
+    - field_layout
+    - image
+    - layout_discovery
+    - link
+    - linked_field
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings: {  }
+id: node.candle.default
+targetEntityType: node
+bundle: candle
+mode: default
+content:
+  field_a:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_candle_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_a
+        advanced: {  }
+    type: image
+    region: content
+  field_color:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_scent:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_type:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_wax:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  links: true

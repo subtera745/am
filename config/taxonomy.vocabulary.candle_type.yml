@@ -1,0 +1,9 @@
+uuid: 048fea4d-3036-4696-a646-99fe01b91b31
+langcode: en
+status: true
+dependencies: {  }
+name: 'Candle Type'
+vid: candle_type
+description: 'The type of Candle'
+hierarchy: 0
+weight: 0

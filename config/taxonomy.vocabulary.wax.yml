@@ -1,0 +1,9 @@
+uuid: 06da0c57-66bc-4734-8d60-e22bdafd2b7e
+langcode: en
+status: true
+dependencies: {  }
+name: Wax
+vid: wax
+description: 'Type of candle wax'
+hierarchy: 0
+weight: 0

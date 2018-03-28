@@ -1,0 +1,21 @@
+uuid: a4e3d9ef-f383-4034-a43e-dcdc2f97269c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.candle
+  module:
+    - text
+id: node.candle.field_description
+field_name: field_description
+entity_type: node
+bundle: candle
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
